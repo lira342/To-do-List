@@ -1,0 +1,80 @@
+.update-controller {
+  display: none;
+}
+
+.lists {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.list-panel {
+  width: 48%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.list-panel h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.to-do-list,
+.done-list {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 220px;
+}
+
+.to-do-item {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+.to-do-item.done .task-text {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.to-do-item.selected {
+  border-color: #007bff;
+  box-shadow: 0 0 0 1px #007bff33;
+  background: #ffffff;
+}
+
+.task-text {
+  user-select: none;
+}
+
+.controls {
+  display: none;
+  gap: 0.35rem;
+}
+
+.to-do-item.selected .controls {
+  display: inline-flex;
+}
+
+.controls button {
+  border: 1px solid #bbb;
+  padding: 0.2rem 0.5rem;
+  background: #fafafa;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.controls button:hover {
+  background: #00000000;
+}
