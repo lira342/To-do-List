@@ -2,6 +2,13 @@
   display: none;
 }
 
+body {
+  background-color: pink;
+  color: white;
+  font-family: "emily-cursive", cursive;
+  margin: 0;
+}
+
 .lists {
   margin-top: 1rem;
   display: flex;
@@ -20,6 +27,7 @@
 .list-panel h2 {
   margin-top: 0;
   font-size: 1.1rem;
+  color: black;
 }
 
 .to-do-list,
@@ -29,17 +37,23 @@
   flex-direction: column;
   gap: 0.5rem;
   min-height: 220px;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
 }
 
 .to-do-item {
   padding: 0.65rem 0.75rem;
-  border: 1px solid #ddd;
+  border: 1px solid #444;
+  color: white;
+  background: #ffffff;
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #fff;
   cursor: pointer;
+  color: black;
 }
 
 .to-do-item.done .task-text {
@@ -51,10 +65,12 @@
   border-color: #007bff;
   box-shadow: 0 0 0 1px #007bff33;
   background: #ffffff;
+  color: black;
 }
 
 .task-text {
   user-select: none;
+  color: black;
 }
 
 .controls {
@@ -73,8 +89,4 @@
   cursor: pointer;
   border-radius: 4px;
   font-size: 0.85rem;
-}
-
-.controls button:hover {
-  background: #00000000;
 }
