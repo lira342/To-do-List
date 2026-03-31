@@ -5,8 +5,6 @@
 body {
   background-color: pink;
   color: white;
-  font-family: "emily-cursive", cursive;
-  margin: 0;
 }
 
 .lists {
@@ -59,9 +57,11 @@ body {
 .to-do-item.done .task-text {
   text-decoration: line-through;
   opacity: 0.75;
+  margin: 20px;
 }
 
 .to-do-item.selected {
+  border-color: #007bff;
   box-shadow: 0 0 0 1px #007bff33;
   background: #ffffff;
   color: black;
@@ -70,6 +70,7 @@ body {
 .task-text {
   user-select: none;
   color: black;
+  margin: 20px;
 }
 
 .controls {
@@ -79,6 +80,7 @@ body {
 
 .to-do-item.selected .controls {
   display: inline-flex;
+  margin: 20px;
 }
 
 .controls button {
